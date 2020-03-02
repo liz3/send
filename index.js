@@ -843,7 +843,7 @@ SendStream.prototype.type = function type (path) {
   }
 
   var charset = mime.charsets.lookup(type)
-  if(type === "application/wasm" && charset && charset.toLowerCase() === "utf8") {
+  if(type === "application/wasm" && charset && charset.toLowerCase() === "utf-8") {
     charset = null;
   }
 
